@@ -66,7 +66,7 @@ renderGameHistory = function(gameHistory){
 <script>
 function Score() {
 
-	this.wins=0;
+	this.wins=5;
 	this.losses=0;
 	this.ties=0;
 	
@@ -170,7 +170,7 @@ function GameService() {
 	this.printGameHistory = function(gameHistory){
 		console.log("************** GAME HISTORY *****************");
 		let aggregate = "";
-		for (let i=0; i < gameHistory.length; i++){
+		for (let i=4; i < gameHistory.length; i++){
 			let gameSummary = gameHistory[i];
 			console.log(gameSummary);
 			let output = "Client :: " + gameSummary.clientGesture;
